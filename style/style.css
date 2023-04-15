@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+main {
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+
+main img {
+    width: 100%;
+
+}
+
+.box-holes {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5.4rem
+}
+.box-holes div {
+    background: url(../assets/toupeira6.svg);
+    width: 222px;
+    height: 171px;
+}
+
+.holes:nth-child(4), .holes:nth-child(6), .holes:nth-child(11) {
+    background: url(../assets/toupeira6.svg);
+    animation-name: comeout;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.holes:nth-child(4) {
+    animation-delay: 4s;
+}
+
+.holes:nth-child(6) {
+    animation-delay: 1s;
+}
+
+.holes:nth-child(11) {
+    animation-delay: 8s;
+}
+
+@keyframes comeout {
+    0% {
+        background: url(../assets/toupeira6.svg);
+    }
+
+    15% {
+        background: url(../assets/toupeira1.svg);
+    }
+
+    30% {
+        background: url(../assets/toupeira2.svg);
+    }
+
+    45% {
+        background: url(../assets/toupeira3.svg);
+    }
+
+    60% { 
+        background: url(../assets/toupeira4.svg);
+    }
+
+    75% { 
+        background: url(../assets/toupeira5.svg);
+    }
+
+    100% {
+        background: url(../assets/toupeira6.svg);
+    }
+
+    
+}
